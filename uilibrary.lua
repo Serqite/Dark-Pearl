@@ -23,7 +23,7 @@ local Players = game:GetService("Players")
 local Player = Players.LocalPlayer
 local Mouse = Player:GetMouse()
 
-local ColorModule = loadstring(game:HttpGet("https://raw.githubusercontent.com/Serqite/Dark-Pearl/main/colormodule.lua?token=GHSAT0AAAAAACAPHOSIJ2LVNKOADRSIVPTCZA4ZI2Q"))()
+local ColorModule = loadstring(game:HttpGet("https://raw.githubusercontent.com/Serqite/Dark-Pearl/main/colormodule.lua"))()
 
 local function MouseIn(obj)
     if (Mouse.X < obj.AbsolutePosition.X or Mouse.X > obj.AbsolutePosition.X + obj.AbsoluteSize.X) or (Mouse.Y < obj.AbsolutePosition.Y or Mouse.Y > obj.AbsolutePosition.Y + obj.AbsoluteSize.Y) then
