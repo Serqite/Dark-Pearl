@@ -50,7 +50,6 @@ Library.NewWindow = function(project_name, ui_info)
     local Top_Bar_Title = new("TextLabel")
     local Close_Button = new("TextButton")
     local Minimize_Button = new("TextButton")
-    local Credits = new("TextLabel")
 
     RCX.Name = project_name
     RCX.Parent = game.CoreGui
@@ -66,19 +65,6 @@ Library.NewWindow = function(project_name, ui_info)
     Main_Window.Position = u2(0, 550, 0, 200)
     Main_Window.Size = u2(0, window_size.X, 0, window_size.Y)
     Main_Window.Active = true
-
-    Credits.Name = "Credits"
-    Credits.Parent = Main_Window
-    Credits.BackgroundTransparency = 1
-    Credits.Active = false
-    Credits.Size = u2(0, 1, 0, 10)
-    Credits.Font = Enum.Font.SourceSans
-    Credits.Text = "Made by Blissful#4992"
-    Credits.TextColor3 = RGB(207, 207, 222)
-    Credits.TextSize = 12
-    Credits.TextXAlignment = Enum.TextXAlignment.Left
-    Credits.ZIndex = 2
-    Credits.Position = u2(0.5, -Credits.TextBounds.X/2, 1, -15)
 
     Pages.Name = "Pages"
     Pages.Parent = Main_Window
