@@ -139,7 +139,7 @@ local RCX = {
 } 
 
 local HttpService = game:GetService("HttpService")
-local RCXFile = "coolprohax.dat"
+local RCXFile = "espsettings.dat"
 
 local function LoadRCX()
     local u, Result = pcall(readfile, RCXFile)
@@ -158,7 +158,7 @@ end
 
 LoadRCX()
 
-local RCX_Window = Library.NewWindow("Cool Pro Hax", {window_size = V3(RCX.UI.Window_Size.X, RCX.UI.Window_Size.Y), window_size_func = function(new_ui_size)
+local RCX_Window = Library.NewWindow("ESP Interface", {window_size = V3(RCX.UI.Window_Size.X, RCX.UI.Window_Size.Y), window_size_func = function(new_ui_size)
     RCX.UI.Window_Size = {X = new_ui_size.X, Y = new_ui_size.Y}
 end, scalable = true, exit_func = function()
     DESTROY = true
@@ -402,7 +402,7 @@ end, function(new)
 end, {default = Enum.KeyCode[RCX.UI.Save_Settings_Key]})
 
 -- SCRIPT
-local LerpColorModule = loadstring(game:HttpGet("https://pastebin.com/raw/wRnsJeid"))()
+local LerpColorModule = loadstring(game:HttpGet("https://raw.githubusercontent.com/Serqite/Dark-Pearl/main/CIELUV.lua"))()
 local HealthBarLerp = LerpColorModule:Lerp(RGB(255, 0, 0), RGB(0, 255, 0))
 
 local Selected_Player = nil
