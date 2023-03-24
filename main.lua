@@ -79,7 +79,7 @@ ESP_API.NewCircle = function(info)
     return c
 end
 
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Serqite/Dark-Pearl/main/uilibrary.lua?token=GHSAT0AAAAAACAPHOSJFSIHMXERQWFSBO5MZA4ZKLQ"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Serqite/Dark-Pearl/main/uilibrary.lua"))()
 
 local DESTROY = false
 
